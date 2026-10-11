@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# --- Виртуальное окружение ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Django ---
+db.sqlite3
+db.sqlite3-journal
+*.log
+media/
+staticfiles/
+
+# --- Секреты и локальные настройки ---
+.env
+.env.*
+!.env.example
+local_settings.py
+
+# --- Тесты и покрытие ---
+.coverage
+htmlcov/
+.pytest_cache/
+
+# --- Редакторы и IDE ---
+.vscode/
+.cursor/
+.idea/
+*.swp
+
+# --- Системные файлы ---
+.DS_Store
+Thumbs.db
