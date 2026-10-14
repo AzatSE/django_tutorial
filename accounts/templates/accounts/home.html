@@ -1,0 +1,9 @@
+{% extends 'accounts/base.html' %}
+{% block content %}
+  <h1>Главная</h1>
+  {% if user.is_authenticated %}
+    <p>Привет, {{ user.username }}!</p>
+  {% else %}
+    <p>Вы не вошли в систему.</p>
+  {% endif %}
+{% endblock %}
